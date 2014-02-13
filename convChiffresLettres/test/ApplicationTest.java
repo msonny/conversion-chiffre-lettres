@@ -40,5 +40,12 @@ public class ApplicationTest {
         assertThat(contentAsString(html)).contains("Your new application is ready.");
     }
 
+    @Test
+    public void test() {
+        String a = new String();
+        a="1";
+        assertThat(a).isEqualTo("un");
+    }
+
 
 }
