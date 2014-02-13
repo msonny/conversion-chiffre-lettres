@@ -1,0 +1,33 @@
+@(formulaire: Form[Chiffre])(reponse: Html)
+
+@import helper._
+@import helper.twitterBootstrap._
+
+@title = {
+    romain en lettre
+}
+
+@main(title, nav = "lettre") {
+
+    @if(formulaire.hasErrors) {
+        <div class="alert-message error">
+            <p>Entrer le Bon chiffre	      
+	      </p>
+        </div>
+    }
+
+    @reponse
+
+    @helper.form(action = routes.ConvEnChiffre.submit) {
+	@inputText(
+	    formulaire("valeur"),
+	    '_label -> "Valeur",
+	    '_help  -> "Entrez un lettre"
+	)
+        
+        <div class="actions">
+            <input type="submit" class="btn primary" value="Convertir">
+        </div>
+    }
+
+}

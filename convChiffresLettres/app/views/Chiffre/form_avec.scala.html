@@ -1,0 +1,7 @@
+@(formulaire: Form[Lettre], lettre: String, chiffre: Int)
+
+@form(formulaire) {
+    <div class="alert-message info">
+      @chiffre = @lettre
+    </div>
+}
