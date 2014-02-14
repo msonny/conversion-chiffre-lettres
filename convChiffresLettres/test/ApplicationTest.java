@@ -46,6 +46,12 @@ public class ApplicationTest {
         a="1";
         assertThat(a).isEqualTo("un");
     }
-
+    
+    @Test 
+    public void test() {
+        String b = new String();
+        b="2";
+        assertThat(b).isEqualTo("deux");
+    }
 
 }
