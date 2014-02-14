@@ -40,10 +40,24 @@ public class ApplicationTest {
         assertThat(contentAsString(html)).contains("Your new application is ready.");
     }
 
-	 @Test
+    @Test
     public void simpleCheck() {
-		String a = new String();
+	String a = new String();
         int a = 2;
         assertThat(a).isEqualTo("deux");
+    }
+    
+    @Test
+    public void simpleCheck() {
+	String b = new String();
+        int b = 3;
+        assertThat(b).isEqualTo("trois");
+    }
+    
+    @Test
+    public void simpleCheck() {
+	String c = new String();
+        int c = 4;
+        assertThat(c).isEqualTo("quatre");
     }
 }
