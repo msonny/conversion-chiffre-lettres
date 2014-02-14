@@ -46,6 +46,28 @@ public class ApplicationTest {
         a="1";
         assertThat(a).isEqualTo("un");
     }
+    
+    @Test
+    public void test() {
+        String b = new String();
+        b="2";
+        assertThat(b).isEqualTo("deux");
+    }
+    
+    @Test
+    public void test() {
+        String c = new String();
+        c="3";
+        assertThat(c).isEqualTo("trois");
+    }
+    
+    @Test
+    public void test() {
+        String d = new String();
+        d="4";
+        assertThat(d).isEqualTo("quatre");
+    }
+
 
 
 }
